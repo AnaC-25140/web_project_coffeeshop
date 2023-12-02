@@ -146,7 +146,7 @@
   justify-content: center;
   gap: 40px;
 }
-.recipes__videos-caption {
+.recipes__videos_caption {
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
