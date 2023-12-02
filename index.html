@@ -5,10 +5,7 @@
     <meta name="author" content="Ana Castañeda" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Html, CSS, tripleten" />
-    <meta
-      name="description"
-      content="Los meta tags de HTML codifican información para ser interpretada por el navegador y los buscadores. ¿Sabes cuáles son imprescindibles?"
-    />
+    <meta name="description" content="Pagina html" />
 
     <title>Cafeteria de A</title>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -23,12 +20,103 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Imagen del logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#recetas">Recetas</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#reservar">Reservar una mesa</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#menu">Menú</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#contactos">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="span__accent">Café de especialidad </span>
+          en la biblioteca Triple Peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y una vibra acogedora que motivarán tu creatividad.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Inside library"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <ul class="header__footer_list">
+            <li class="header__footer_list-item">Horario</li>
+            <li class="header__footer_list-item">
+              Lunes a Viernes( de 10:00 a 19:00)
+            </li>
+            <li class="header__footer_list-item">
+              Sábado a Domingo (de 11:00 a 18:00)
+            </li>
+          </ul>
+          <p class="header__address">
+            Avenida del Éxito 200, Ciudad Triple Peaks
+          </p>
+        </div>
+      </header>
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
-        <section class="menu"></section>
-        <section class="about"></section>
+        <section class="recipes" id="recetas">
+          <h2 class="recipes__title">Recetas</h2>
+          <p class="recipes__subtitle">
+            Echa un vistazo a algunas de las recetas que hemos reunido para que
+            elabores tu propio café.
+          </p>
+          <div class="recipes__videos">
+            <iframe
+              width="480"
+              height="273"
+              src="https://www.youtube.com/embed/iEDVYF5c9sI?si=HXM7d4-Dz1a4Ab3S"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+
+            <iframe
+              width="480"
+              height="273"
+              src="https://www.youtube.com/embed/ft6MXoDoJIw?si=P39YFCvwTTXcmeFj"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="recipes__videos-caption">
+            <p class="recipes__videos-caption-1">
+              Termo de jack
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              ~7
+            </p>
+            <p class="recipes__videos-caption-2">
+              Termo de luffy
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              ~6
+            </p>
+          </div>
+        </section>
+        <section class="reservation" id="reservar"></section>
+        <section class="menu" id="menu"></section>
+        <section class="contacos" id="contactos"></section>
       </main>
       <footer class="footer"></footer>
     </div>
