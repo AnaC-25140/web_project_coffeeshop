@@ -59,16 +59,16 @@
   z-index: -1;
 }
 .header__title {
+  max-width: 729px;
+  margin: 183px auto 28px 80px;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.6px;
-  max-width: 729px;
-  margin: 183px auto 28px 80px;
 }
-.header__span_accent {
+.header__title_span-accent {
   display: block;
   color: #2f80ed;
   font-family: "Noto Serif", "Times New Roman", serif;
