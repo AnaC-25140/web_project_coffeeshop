@@ -229,7 +229,7 @@
   width: 20px;
   height: 20px;
 }
-.form__input-container-check {
+.reservation__form-container-check {
   display: flex;
   gap: 20px;
 }
