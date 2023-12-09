@@ -43,9 +43,7 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="header header__title header__title_span-accent"
-            >Café de especialidad
-          </span>
+          <span class="header__title_span-accent">Café de especialidad </span>
           en la biblioteca Triple Peaks
         </h1>
         <p class="header__description">
@@ -58,20 +56,12 @@
           class="header__image"
         />
         <div class="header__footer">
-          <ul class="header__footer header__footer_list">
-            <li
-              class="header__footer header__footer_list header__footer_list-item"
-            >
-              Horario
-            </li>
-            <li
-              class="header__footer header__footer_list header__footer_list-item"
-            >
+          <ul class="header__footer_list">
+            <li class="header__footer_list-item">Horario</li>
+            <li class="header__footer_list-item">
               Lunes a Viernes( de 10:00 a 19:00)
             </li>
-            <li
-              class="header__footer header__footer_list header__footer_list-item"
-            >
+            <li class="header__footer_list-item">
               Sábado a Domingo (de 11:00 a 18:00)
             </li>
           </ul>
@@ -109,20 +99,74 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div class="recipes__videos recipes__videos_caption">
-            <p
-              class="recipes__videos recipes__videos_caption recipes__videos_caption-1"
-            >
-              Termo de jack ~7
-            </p>
-            <p
-              class="recipes__videos recipes__videos_caption recipes__videos_caption-2"
-            >
-              Termo de luffy ~6
-            </p>
+          <div class="recipes__videos_caption">
+            <div class="recipes__videos_caption-1">
+              <p>Termo de jack <span> ~7 </span></p>
+            </div>
+            <div class="recipes__videos_caption-2">
+              <p>Termo de luffy ~6</p>
+            </div>
           </div>
         </section>
-        <section class="reservation" id="reservar"></section>
+        <section class="reservation" id="reservar">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form">
+            <fieldset class="form__input-container">
+              <label for="name" class="form__label">Nombre*</label>
+              <input
+                type="text"
+                class="form__item"
+                id="name"
+                placeholder="Nombre Apellido"
+                required
+              />
+              <label for="comensales" class="form__label"
+                >Número de comensales*</label
+              >
+              <input
+                type="number"
+                class="form__item"
+                id="comensales"
+                placeholder="1-8"
+                required
+                min="1"
+                max="8"
+              />
+              <label for="fecha-hora" class="form__label">Fecha y hora*</label>
+              <input
+                type="datetime-local"
+                class="form__item"
+                id="fecha-hora"
+                required
+              />
+              <label for="email" class="form__label"
+                >Tu correo electrónico*</label
+              >
+              <input
+                type="email"
+                class="form__item"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+
+              <button type="submit" class="form__button">
+                Reservar una mesa
+              </button>
+            </fieldset>
+            <fieldset class="form__input-container form__input-container-check">
+              <input
+                type="checkbox"
+                class="form__item_el_extra-options"
+                id="terminos"
+                checked
+              />
+              <label class="form__label" for="terminos"
+                >Acepto los terminos de uso</label
+              >
+            </fieldset>
+          </form>
+        </section>
         <section class="menu" id="menu"></section>
         <section class="contacos" id="contactos"></section>
       </main>
