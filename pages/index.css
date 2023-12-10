@@ -145,7 +145,7 @@
   justify-content: center;
   gap: 40px;
 }
-.recipes__videos_caption {
+.recipes__videos-caption {
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -155,10 +155,10 @@
   justify-content: center;
   gap: 40px;
 }
-.recipes__videos_caption-1 {
+.recipes__videos-caption-1 {
   display: flex;
 }
-.recipes__videos_caption-2 {
+.recipes__videos-caption-2 {
   display: flex;
 }
 .reservation {
