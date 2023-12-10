@@ -225,11 +225,18 @@
   transition: 1s ease-out;
   opacity: 70%;
 }
-.reservation__form-options {
+.reservation__form-check-options {
   width: 20px;
   height: 20px;
 }
-.reservation__form-container-check {
+.reservation__form-check {
   display: flex;
   gap: 20px;
+  padding: 0;
+  max-width: 385px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin: auto;
+  border: none;
 }
