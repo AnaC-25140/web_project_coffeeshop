@@ -9,7 +9,6 @@
 
     <title>Cafeteria de A</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -119,19 +118,14 @@
                 id="name"
                 placeholder="Nombre Apellido"
                 required
+                name="Nombre"
               />
               <label for="comensales" class="reservation__form-label"
                 >Número de comensales*</label
               >
-              <input
-                type="number"
-                class="reservation__form-item"
-                id="comensales"
-                placeholder="1-8"
-                required
-                min="1"
-                max="8"
-              />
+              <input type="number" class="reservation__form-item"
+              id="comensales" placeholder="1-8" required min="1" max="8"
+              name="Numero />
               <label for="fecha-hora" class="reservation__form-label"
                 >Fecha y hora*</label
               >
@@ -140,6 +134,7 @@
                 class="reservation__form-item"
                 id="fecha-hora"
                 required
+                name="Fecha-Hora"
               />
               <label for="email" class="reservation__form-label"
                 >Tu correo electrónico*</label
@@ -150,9 +145,14 @@
                 id="email"
                 placeholder="email@email.com"
                 required
+                name="Email"
               />
 
-              <button type="submit" class="reservation__form-button">
+              <button
+                type="submit"
+                class="reservation__form-button"
+                name="Enviar"
+              >
                 Reservar una mesa
               </button>
             </fieldset>
@@ -162,6 +162,7 @@
                 class="reservation__form-check-options"
                 id="terminos"
                 checked
+                name="Terminos"
               />
               <label class="reservation__form-label" for="terminos"
                 >Acepto los términos de uso</label
@@ -169,7 +170,126 @@
             </fieldset>
           </form>
         </section>
-        <section class="menu" id="menu"></section>
+        <section class="menu" id="menu">
+          <h2 class="menu__title">Menú</h2>
+          <h3 class="menu__subtitle">
+            Elaboramos nuestro café con granos certificados de comercio justo,
+            tostados localmente y usamos tazas biodegradables. Todos los tés de
+            nuestra colección a $2/taza
+          </h3>
+          <div class="cards">
+            <div class="card">
+              <h4 class="card__title">De filtro</h4>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Regular(12
+                  oz)______________________________________________________
+                  <span class="card__list-divider"></span>
+                  $1
+                </li>
+
+                <li class="card__list-item">
+                  Grande(16
+                  oz)_____________________________________________________
+                  <span class="card__list-divider"></span> $1.25
+                </li>
+
+                <li class="card__list-item">
+                  XL(20
+                  oz)___________________________________________________________
+                  <span class="card__list-divider"></span> $1.5
+                </li>
+
+                <li class="card__list-item">
+                  Tamaño familiar(24 oz,
+                  descafeinado)____________________________
+                  <span class="card__list-divider"></span> $1.75
+                </li>
+
+                <li class="card__list-item">
+                  Cafe helado(16
+                  oz)_________________________________________________
+                  <span class="card__list-divider"></span> $1.25
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4 class="card__title">Espresso</h4>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Macciato__________________________________________________________
+                  <span class="card__list-divider"></span> $2.25
+                </li>
+
+                <li class="card__list-item">
+                  Cortado_____________________________________________________________
+                  <span class="card__list-divider"></span> $2.5
+                </li>
+
+                <li class="card__list-item">
+                  Mocha_______________________________________________________________
+                  <span class="card__list-divider"></span> $3
+                </li>
+
+                <li class="card__list-item">
+                  Amanecer en Bay Area
+                  (descafeinado)_____________________________<span
+                    class="card__list-divider"
+                  ></span>
+                  $10
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4 class="card__title">Respostería</h4>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Croissant de
+                  almendra______________________________________________
+                  <span class="card__list-divider"></span> $2
+                </li>
+
+                <li class="card__list-item">
+                  Pan de
+                  banana___________________________________________________
+                  <span class="card__list-divider"></span> $1.75
+                </li>
+
+                <li class="card__list-item">
+                  Tarta de
+                  limón______________________________________________________<span
+                    class="card__list-divider"
+                  ></span
+                  >$3
+                </li>
+
+                <li class="card__list-item">
+                  Pastel Blue
+                  velvet________________________________________________<span
+                    class="card__list-divider"
+                  ></span
+                  >$3.75
+                </li>
+
+                <li class="card__list-item">
+                  Cookie
+                  web__________________________________________________________<span
+                    class="card__list-divider"
+                  ></span
+                  >$2
+                </li>
+
+                <li class="card__list-item">
+                  Baguette
+                  fresco____________________________________________________<span
+                    class="card__list-divider"
+                  ></span
+                  >$0.25
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <section class="contacos" id="contactos"></section>
       </main>
       <footer class="footer"></footer>
