@@ -8,6 +8,7 @@
   font-style: normal;
   position: relative;
   z-index: 3;
+  height: 100vh;
 }
 .menu__title {
   font-family: "Inter", Arial, sans-serif;
