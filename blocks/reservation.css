@@ -33,6 +33,8 @@
 }
 .reservation__form-label {
   margin: 0 auto 8px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .reservation__form-item {
   margin: 0 auto 32px auto;
